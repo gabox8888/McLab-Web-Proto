@@ -1,0 +1,1 @@
+cmd_Release/lwip_image.node := ln -f "Release/obj.target/lwip_image.node" "Release/lwip_image.node" 2>/dev/null || (rm -rf "Release/lwip_image.node" && cp -af "Release/obj.target/lwip_image.node" "Release/lwip_image.node")

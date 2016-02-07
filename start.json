@@ -1,0 +1,20 @@
+{
+	"apps": [
+		{
+			"name": "McWebAPI",
+			"script": "server/McWebAPI.js"	,
+			"err_file"    : "../logs/McWebAPI.log",
+    		"out_file"    : "../logs/McWebAPI.log",
+    		"log_file"    : true,
+    		"log_date_format"  : "YYYY-MM-DD HH:mm Z",
+		    "ignore_watch" : ["[\\/\\\\]\\./", "node_modules"],
+		    "watch"       : true,
+		    "watch_options": {
+		      "followSymlinks": true,
+		      "useFsEvents" : true,
+		      "ignorePermissionErrors": true
+		    },
+		    "exec_mode" : "fork_mode"
+		}
+	]
+}
